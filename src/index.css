@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
   padding: 50px 0 400px 0;
   height: 100vh;
   box-sizing: border-box;
-  opacity: 0;
+  /* opacity: 0; */
   position: relative;
 }
 
@@ -157,9 +157,12 @@ nav.nav-wrapper {
 nav .nav-content {
   margin: 0 auto;
   box-sizing: border-box;
+ 
   width: 100%;
   max-width: 1024px;
   padding: 0 22px;
+  display:flex;
+  
 }
 
 nav .list-styled {
@@ -167,9 +170,12 @@ nav .list-styled {
   margin: 0 -9px;
   width: auto;
   height: 44px;
+  width:100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  
+  
 }
 
 nav .link-styled {
@@ -182,6 +188,8 @@ nav .link-styled {
   justify-content: center;
   height: 44px;
   color: #000000cc;
+  text-decoration: none;
+  
 }
 
 .jumbotron-section.wrapper {
@@ -328,7 +336,7 @@ nav .link-styled {
   display: flex;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
+  opacity: 100;
 }
 
 .sound-section .title {
@@ -402,6 +410,7 @@ nav .link-styled {
   .jumbotron-section .iphone-img,
   nav .link-styled {
     display: none;
+    
   }
 
   nav .list-styled {
